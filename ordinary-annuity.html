@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <title>Financial Calculators - Annuity Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="link-fix">
+            <h1>Financial Calculators</h1>
+        </a>
+    </header>
+
+    <aside class="mx-3 rounded">
+        Remember, our calculators are user-friendly. Just enter the relevant information, hit submit, and receive
+        accurate results within seconds! If you have any specific questions or need further assistance, feel free to
+        ask!
+        <!-- Hover added -->
+        <div class="list-group pt-3">
+            <a href="mort-calc.html" class="list-group-item list-group-item-action">Mortgage Calculator</a>
+            <a href="compound-calc.html" class="list-group-item list-group-item-action">Ordinary Annuity Calculator</a>
+            <a href="ordinary-annuity.html" class="list-group-item list-group-item-action">Future Value Calculator</a>
+        </div>
+
+    </aside>
+
+    <main>
+        <h2>Annuity Calculator</h2>
+        <p>The Annuity Calculator is intended for use involving the accumulation phase of an annuity and shows growth
+            based on regular deposits.</p>
+
+        <section>
+
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div name="annuityRow">
+                        <div class="col-6">
+                            <div>
+                                <label for="annuityInput">Annuity Payment $</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input type="number" name="" id="annuityInput" autofocus>
+                        </div>
+                    </div>
+                    <div name="interestRow">
+                        <div class="col-6">
+                            <div>
+                                <label for="interestInput">Interest</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input type="number" name="" id="interestInput">
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <div name="durationRow">
+                        <div class="col-6">
+                            <div>
+                                <label for="yearInput">Duration (Years)</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input type="number" name="" id="yearInput">
+                        </div>
+                    </div>
+                    <div name="buttonRow" class="m-3">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-secondary" onclick="parseInfoPresentValue();">
+                                Calculate
+                            </button>
+                            <button type="button" class="btn btn-secondary" onclick="clearAll('annuityInput');">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div name="outputRow" class="mx-auto col-6">
+                        <div id="output" class="border border-dark"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        © 2024 Financial Calculators. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
+
+<!-- <main>
+
+        <section>
+            <h1>Annuity</h1>
+        </section>
+
+        <section>
+            <h2>Inputs</h2>
+            <-- (Annuity Payment, Annual Interest Rate, Number of Years, Annuity Type) --<
+            <div>
+                <label for="annuityInput">Annuity Payment $</label>
+                <input type="number" name="" id="annuityInput" autofocus>
+            </div>
+
+            <div>
+                <label for="interestInput">Interest Rate</label>
+                <input type="number" name="" id="interestInput">
+                <span>%</span>
+            </div>
+
+            <div>
+                <label for="yearInput">Duration (Years)</label>
+                <input type="number" name="" id="yearInput">
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="parseInfoPresentValue();">
+                Calculate
+            </button>
+            <button type="button" class="btn btn-primary" onclick="clearAll('annuityInput');">
+                Clear
+            </button>
+            <div id="output">Output</div>
+
+        </section>
+
+    </main> -->
