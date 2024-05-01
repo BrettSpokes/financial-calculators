@@ -91,6 +91,6 @@ function clearAll(pageType) {
     document.getElementById("yearInput").value = null;
 
     const outputField = document.getElementById('output');
-    outputField.textContent = 'Output';
+    outputField.textContent = '';
 
 }
